@@ -1,0 +1,18 @@
+.wrapper {
+  padding: 10px;
+  background: #ccc;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  .user-container {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    address {
+      margin: 5px;
+    }
+  }
+}

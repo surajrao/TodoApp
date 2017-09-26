@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="user-class" *ngFor="let user of users">
+    <div class="clear"></div>
+    <div class="user-container">
+      <div class="user-name">{{user.name}}</div>
+      <div class="user-contact">{{user.email}}</div>
+      <address>
+        {{user.address?.street}},{{user.address?.suite}}<br/> {{user.address?.city}}-{{user.address?.zipcode}}
+      </address>
+      <div class="user-phone">
+        Phone: {{user.phone}}
+      </div>
+      <div class="user-website">
+        Website: {{user.website}}
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
