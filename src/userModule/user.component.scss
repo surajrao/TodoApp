@@ -1,18 +1,22 @@
 .wrapper {
-  padding: 10px;
-  background: #ccc;
-  margin: 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  h2{
+    font-size: 1.5em;
+  }
   .user-container {
     color: black;
     background: white;
     padding: 5px;
+    margin:10px 0px;
     border-radius: 5px;
-    address {
-      margin: 5px;
+    height: auto;
+    word-wrap: break-word;
+
+    .todo-view-button{
+      margin: 10px;
+    }
+    .todo-company{
+      min-height: 60px;
     }
   }
 }

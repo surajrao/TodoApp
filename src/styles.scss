@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
+.app-icon {
+  color: $linkcolor;
+}
+
+.app-link {
+  color: $linkcolor;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
