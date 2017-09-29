@@ -1,15 +1,17 @@
 import { TodoItemsService } from './todoItems.service';
 import { NgModule } from '@angular/core';
-// import { UserComponent } from './user.component';
-import { CommonModule } from './../app/common.module';
+
+import { TodosRoutingModule } from './todos-routing.module';
+import { TodoItemsComponent } from './todoItems.component';
+import { SharedCommonModule } from './../app/common.module';
 
 @NgModule({
   declarations: [
+    TodoItemsComponent
   ],
   imports: [
-    CommonModule
-  ],
-  exports: [
+    SharedCommonModule,
+    TodosRoutingModule
   ],
   providers: [TodoItemsService],
 })

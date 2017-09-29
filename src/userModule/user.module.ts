@@ -1,19 +1,16 @@
 import { UserService } from './user.service';
 import { NgModule } from '@angular/core';
 import { UserComponent } from './user.component';
-import { CommonModule } from './../app/common.module';
-import { TodoItemsModule } from './../todoItemsModule/todoItems.module';
+import { SharedCommonModule } from './../app/common.module';
+import { UsersRoutingModule } from './users-routing.module';
 
 @NgModule({
   declarations: [
     UserComponent
   ],
   imports: [
-    CommonModule,
-    TodoItemsModule
-  ],
-  exports: [
-    UserComponent
+    SharedCommonModule,
+    UsersRoutingModule
   ],
   providers: [UserService],
 })

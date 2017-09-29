@@ -1,6 +1,6 @@
 import { User } from './../models/User';
 import { UserService } from './user.service';
-import { TodoItemsService } from './../todoItemsModule/todoItems.service';
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['user.component.scss']
 })
 export class UserComponent implements OnInit {
-  constructor(private userService: UserService, private todoItemsService: TodoItemsService) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   users: User[] = [];
   ngOnInit() {
@@ -20,9 +20,6 @@ export class UserComponent implements OnInit {
   }
 
   viewTodos(user: User) {
-    this.todoItemsService.getTodoItems(user.id)
-      .subscribe(data => {
-        console.log(data);
-      });
+    this.router.navigate(['/todos', user.id]);
   }
 }

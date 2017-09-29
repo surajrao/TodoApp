@@ -17,3 +17,4 @@ import 'rxjs/add/operator/mapTo';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/takeWhile';
 import 'rxjs/add/observable/if';
+import 'rxjs/add/observable/fromPromise';
